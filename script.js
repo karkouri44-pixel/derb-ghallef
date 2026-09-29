@@ -8,3 +8,50 @@ ar:{brand:"درب غلف",brandSub:"للبيع والشراء",home:"الرئي�
 en:{brand:"Derb Ghallef",brandSub:"Buy & Sell",home:"Home",ads:"Listings",categories:"Categories",about:"About",contact:"Contact",welcome:"Welcome to Derb Ghallef",heroText:"Casablanca's market, now online.",discover:"Discover listings",market:"The heart of the market",marketText:"Explore shops, products and great deals.",browse:"Browse categories",digital:"Derb Ghallef goes digital",digitalText:"Post, search and contact sellers directly.",publish:"Post an ad",search:"Search for a listing...",searchBtn:"Search",latest:"Recent listings",allAds:"View all",explore:"Explore categories",cat1:"Phones",cat2:"Computers",cat3:"Accessories",cat4:"Electronics",cat5:"Home",cat6:"Other",aboutTitle:"The spirit of Derb Ghallef",aboutText:"A modern space inspired by Casablanca's famous Derb Ghallef market, designed to connect buyers and sellers and make great deals easier to find.",ctaTitle:"Have something to sell?",ctaText:"Post your listing and connect directly with buyers.",rights:"All rights reserved."}
 };
 document.querySelector('#language').addEventListener('change',e=>{const lang=e.target.value,t=translations[lang];document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(t[k])el.textContent=t[k]});document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{el.placeholder=t[el.dataset.i18nPlaceholder]})});
+// Recherche des produits
+function filterProducts(query = "") {
+  const q = query.trim().toLowerCase();
+
+  document.querySelectorAll(".card").forEach(card => {
+    const text = card.textContent.toLowerCase();
+    card.style.display = (!q || text.includes(q)) ? "" : "none";
+  });
+}
+
+// Recherche en tapant
+const searchInput = document.querySelector("#search");
+
+if (searchInput) {
+  searchInput.addEventListener("input", e => {
+    filterProducts(e.target.value);
+  });
+}
+
+// Bouton Rechercher
+const searchButton = document.querySelector(".quick .btn");
+
+if (searchButton) {
+  searchButton.addEventListener("click", e => {
+    e.preventDefault();
+    filterProducts(searchInput ? searchInput.value : "");
+    document.querySelector("#annonces")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+}
+
+// Boutons des catégories
+document.querySelectorAll(".category-filter").forEach(button => {
+  button.addEventListener("click", () => {
+    const category = button.dataset.category;
+
+    document.querySelectorAll(".card").forEach(card => {
+      card.style.display =
+        card.dataset.category === category ? "" : "none";
+    });
+
+    document.querySelector("#annonces")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
