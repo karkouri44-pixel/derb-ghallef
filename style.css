@@ -1,1 +1,51 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#18221d;background:#fff}a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}.header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e7e9e7;box-shadow:0 2px 12px #0000000b}.nav{height:76px;display:flex;align-items:center;gap:25px}.brand{display:flex;align-items:center;gap:10px;margin-right:auto}.brand .flag{font-size:30px}.brand strong{display:block;font-size:19px;color:#087443}.brand small{display:block;color:#333;font-size:12px;margin-top:2px}nav{display:flex;gap:22px;font-size:14px;font-weight:600}nav a:hover{color:#087443}select{border:1px solid #ddd;border-radius:9px;padding:9px;background:#fff}.menu-btn{display:none;background:none;border:0;font-size:26px}.hero{width:100%;height:510px}.slider{height:100%;position:relative;overflow:hidden}.slide{display:none;height:100%;position:relative}.slide.active{display:block}.slide-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.55)}.bg1{background-image:linear-gradient(120deg,#006233,#c1272d)}.bg2{background-image:linear-gradient(120deg,#333,#087443 55%,#c1272d)}.bg3{background-image:linear-gradient(120deg,#c1272d,#222 45%,#087443)}.slide-content{position:relative;z-index:2;color:white;width:min(900px,86%);margin:auto;padding-top:130px}.slide-content h1{font-size:clamp(34px,5vw,64px);max-width:760px;margin:18px 0 10px}.slide-content p{font-size:20px;max-width:600px}.badge,.eyebrow,.tag{font-weight:700}.badge{display:inline-block;background:#ffffff20;border:1px solid #ffffff55;border-radius:30px;padding:8px 14px}.btn{display:inline-block;background:#087443;color:white;padding:13px 20px;border-radius:10px;font-weight:700;margin-top:16px;border:0;cursor:pointer}.btn:hover{transform:translateY(-1px)}.prev,.next{position:absolute;top:50%;transform:translateY(-50%);border:0;border-radius:50%;width:46px;height:46px;background:#ffffff30;color:white;font-size:35px;cursor:pointer}.prev{left:22px}.next{right:22px}.dots{position:absolute;bottom:22px;left:0;right:0;text-align:center}.dot{width:10px;height:10px;border-radius:50%;border:0;margin:5px;background:#fff8;cursor:pointer}.dot.active{background:#fff}.quick{margin-top:-28px;position:relative;z-index:4;background:white;padding:15px;border-radius:14px;box-shadow:0 8px 30px #00000018;display:flex;gap:12px}.quick div{flex:1;display:flex;align-items:center;gap:10px}.quick input{width:100%;border:0;outline:0;font-size:16px}.dark{background:#18221d;margin:0}.section{padding:70px 0}.alt{background:#f5f7f5}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.section-head h2{font-size:32px;margin:7px 0}.outline{border:1px solid #087443;color:#087443;padding:10px 15px;border-radius:9px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border:1px solid #e5e8e5;border-radius:16px;overflow:hidden;background:white;box-shadow:0 5px 20px #00000008}.card-img{height:170px;display:grid;place-items:center;font-size:65px}.phone{background:#eaf5ef}.computer{background:#eef1f6}.accessories{background:#f7eee9}.card-body{padding:18px}.tag{font-size:12px;color:#087443}.card h3{margin:8px 0}.card p{color:#66716b}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.categories div{background:#fff;padding:25px 12px;border-radius:14px;text-align:center;font-weight:700;box-shadow:0 3px 15px #00000008}.categories div:first-letter{font-size:28px}.about-box{max-width:780px;margin:auto;text-align:center}.about-box h2{font-size:34px}.about-box p{line-height:1.8;color:#5f6a64;font-size:17px}.cta{background:#087443;color:#fff;padding:55px 0}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font-size:32px;margin:8px 0}.cta p{opacity:.9}.actions{display:flex;gap:10px}.whatsapp{background:#25d366}.facebook{background:#1877f2}footer{background:#18221d;color:#dce7df;padding:30px 0}.footer{display:flex;justify-content:space-between;gap:20px;font-size:14px}.footer p{opacity:.75}@media(max-width:800px){.nav{height:68px}.menu-btn{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;padding:15px 4%;flex-direction:column;box-shadow:0 8px 15px #0001}nav.open{display:flex}select{font-size:12px}.hero{height:460px}.slide-content{padding-top:105px}.slide-content h1{font-size:38px}.slide-content p{font-size:16px}.cards{grid-template-columns:1fr 1fr}.categories{grid-template-columns:repeat(3,1fr)}.cta-inner{flex-direction:column;align-items:flex-start}.footer{flex-direction:column}}@media(max-width:520px){.brand strong{font-size:16px}.brand small{font-size:10px}.hero{height:500px}.slide-content{padding-top:105px}.slide-content h1{font-size:32px}.prev,.next{width:38px;height:38px;font-size:28px}.quick{margin-top:-20px;flex-direction:column}.quick .btn{width:100%;text-align:center}.cards{grid-template-columns:1fr}.categories{grid-template-columns:repeat(2,1fr)}.section{padding:50px 0}.section-head{align-items:start}.section-head h2{font-size:27px}.outline{font-size:12px}.actions{width:100%;flex-direction:column}.actions .btn{text-align:center;width:100%}}
+/* Section SEO Derb Ghallef */
+.seo-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  background: #f5f5f5;
+  line-height: 1.7;
+}
+
+.seo-section h2 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.seo-section p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.facebook-seo-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #1877f2;
+  color: white;
+}
+
+.facebook-seo-button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .seo-section {
+    margin: 25px 12px;
+    padding: 20px 15px;
+  }
+
+  .seo-section h2 {
+    font-size: 21px;
+  }
+
+  .seo-section p {
+    font-size: 15px;
+  }
+}
